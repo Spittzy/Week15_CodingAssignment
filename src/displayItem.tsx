@@ -1,7 +1,7 @@
 // import ItemCard from "./itemCard"
 // }
 import type { Recipe } from "./types"
-import { useState, useEffect, use } from "react"
+import { useState, useEffect } from "react"
 
 type DisplayItemProps = {
     card: Recipe
@@ -21,7 +21,7 @@ export default function DisplayItem({ card, isSelected }: DisplayItemProps) {
     return (
         isExpanded ? (
             <div className="collapse collapse-horizontal mt-3 show w-100" id="collapseWidthExample">
-                <div className="card card-body gap-2">
+                <div className="card card-body bg-warning-subtle gap-2">
                     <div className="row">
                         <div className="col">
                             <h3> {card.recipeName}</h3>

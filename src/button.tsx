@@ -6,7 +6,7 @@ type button = {
 export default function Button({ text, onClick }: button) {
     return (
         <div>
-            <button className="btn btn-danger rounded-pill " onClick={onClick}>
+            <button className="btn btn-danger rounded-pill mb-2 ms-2 " onClick={onClick}>
                 {text}
             </button>
         </div>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import Button from './button'
 import DisplayItem from './displayItem'
 import { Recipe } from './types';
@@ -23,7 +23,7 @@ export default function ItemCard({ cards, onSelected, deleteCard, editCard, isSe
         <div className='col-md-3 p-3'>
             <div className='container-fluid'>
                 {/* if card is clicked on collapse Instructions */}
-                <div className={`card-md-2 mb-5 ${isSelected ? 'border border-primary' : 'border-light'}`} id='recipeCard' onClick={() => {
+                <div className={`card-md-2 mb-5 ${isSelected ? 'border border-danger' : 'border-light'}`} id='recipeCard' onClick={() => {
                     onSelected(cards.id)
 
                 }}>
